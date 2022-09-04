@@ -1,27 +1,22 @@
 
-.LogoInstagramTop img {
+.logoinstagramtop img {
     position: absolute;
     margin: 0;
-    top: 5px;
-    width: 16px;
-    left: 90%;
+    top: 4px;
+    width: 16.5px;
+    left: 88.5%;
+    flex: 1;
 }
 
-.LogoMarca img {
-    position: absolute;
-    margin: 0;
-    top: 60px;
-    width: 80px;
-    left: 15%;
-    
-}
 
-.LogoLogin img {
+.logomarca img {
     position: absolute;
     margin: 0;
-    top: 60px;
-    width: 50px;
-    left: 75%;
+    top: 50px;
+    width: 100px;
+    left: 14%;
+    flex: 1;
+    border-radius: 10px
     
 }
 
@@ -73,7 +68,6 @@ main {
 footer {
     grid-area: footer;
     background: linear-gradient(gray, rgb(194, 194, 194));
-
     display: flex;
 }
 
@@ -111,15 +105,33 @@ h4 {
     margin-top: 45px;
 }
 
-h5 {
-    display: inline;
-    position: relative;
-    margin: 1px;
-    margin-top: -75px;
+nav ul {
+  
+    display: flex;          
     font-size: 20px;
     letter-spacing: 2px;
     color:rgb(255, 255, 255);
-    font-family: 'Roboto Slab', serif;
-    left: 80px;
-    padding: 100px;
+    font-family: 'Roboto Slab', serif;    
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    align-items: center;
+    margin-left: 75px;
+    gap: 15rem;
+    
+}
+
+li:hover {
+  color: darkred;  
+  transition-duration:0.15s;
+    
+}
+
+.logowhatsapp img{
+    position: absolute;
+    margin: 0;
+    top: 5px;
+    width: 16px;
+    left: 90%;
+    flex: 1;
 }
