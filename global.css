@@ -1,29 +1,7 @@
 
-.logoinstagramtop img {
-    position: absolute;
-    margin: 0;
-    top: 4px;
-    width: 16.5px;
-    left: 88.5%;
-    flex: 1;
-}
-
-
-.logomarca img {
-    position: absolute;
-    margin: 0;
-    top: 50px;
-    width: 100px;
-    left: 14%;
-    flex: 1;
-    border-radius: 10px
-    
-}
-
 body {
     margin: 0;
     height: 100vh;
-
     display: grid;
     grid-template-areas:
         "header header"
@@ -38,30 +16,35 @@ grid-template-columns: 1fr
 
 header {
     grid-area: header;
-    background-color: rgb(164, 6, 6);
-    
-    
+    background-color: rgb(148, 13, 13);
+    display: flex;
     
 }
 
 content {
     grid-area: content;
-    background-color: rgb(168, 26, 26);
-
+    background-color: darkred;
     display: flex;
+}
+
+.logomarca img {
+    display: flex;
+    align-items: left;
+    margin: 25px 0px 0px 240px;
+    width: 100px;    
+    border-radius: 10px;
+    
 }
 
 nav {
     grid-area: nav;
     background: linear-gradient(rgb(32, 30, 30), black);
-
     display: flex;
 }
 
 main {
     grid-area: main;
     background-color: rgb(255, 255, 255);
-
     display: flex;
 }
 
@@ -72,41 +55,39 @@ footer {
 }
 
 h2 {
-    display: inline;
-    position: relative;
-    margin: 50px;
+    display: inline;   
+    margin-left: 250px;
     font-size: 13px;
     letter-spacing: 2px;
     color:rgb(255, 255, 255);
     font-family: 'Roboto Slab', serif;
-}
-
-h3 {
-    display: inline;
-    position: relative;
-    margin: 0px;
-    font-size: 13px;
-    letter-spacing: 2px;
-    color:rgb(255, 255, 255);
-    font-family: 'Roboto Slab', serif;
-    left: 25%;
+    margin-top: 0px;
+    align-items: center;
     
 }
 
-h4 {
-    display: inline;
-    position: relative;
+h3 {
+    display: inline;    
     margin: 0px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto Slab', serif;
+    align-items: center;
+    margin-left: 320px;
+}
+
+h4 {       
+    margin-left: 40px;
     font-size: 40px;
     letter-spacing: 3px;
     color:rgb(255, 255, 255);
     font-family: 'Roboto Slab', serif;
-    left: 20%;
     margin-top: 45px;
+    
 }
 
-nav ul {
-  
+nav ul { 
     display: flex;          
     font-size: 20px;
     letter-spacing: 2px;
@@ -122,16 +103,24 @@ nav ul {
 }
 
 li:hover {
-  color: darkred;  
+  color: rgb(155, 19, 19);  
   transition-duration:0.15s;
     
 }
 
 .logowhatsapp img{
-    position: absolute;
-    margin: 0;
-    top: 5px;
-    width: 16px;
-    left: 90%;
-    flex: 1;
+    display: inline;
+    align-items: right;
+    width: 23px;
+    margin-left:8px;
+    margin-top: 1.5px;
+} 
+
+.logoinstagramtop img {
+    display: inline;
+    align-items: right;
+    width: 23px;
+    margin-left: 555px;
+    margin-top: 2px;
 }
+
